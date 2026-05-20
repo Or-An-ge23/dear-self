@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
 <title>亲爱的自己 — 一封写给自己的情书</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<!-- 字体：优先使用系统内置衬线字体，微信/国内环境无需加载外部字体 -->
 <style>
 :root {
   --bg-abyss: #060912;
@@ -33,7 +33,7 @@ html{scroll-behavior:smooth;}
 body{
   background:var(--bg-abyss);
   color:var(--text-primary);
-  font-family:'Noto Serif SC','STSong','PingFang SC','Microsoft YaHei',serif;
+  font-family:'STSong','PingFang SC','Microsoft YaHei',serif;
   min-height:100vh;
   overflow-x:hidden;
   cursor:default;
@@ -106,7 +106,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 #hero.visible{opacity:1;}
 #hero h1{
-  font-family:'Cormorant Garamond','Playfair Display','Noto Serif SC',serif;
+  font-family:Georgia,'Times New Roman','STSong','SimSun',serif;
   font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:600;letter-spacing:0.05em;
   color:var(--text-primary);
   text-shadow:0 0 40px rgba(244,167,187,0.25),0 0 80px rgba(244,167,187,0.12),0 0 120px rgba(255,209,102,0.06);
@@ -166,7 +166,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   100%{width:600px;height:600px;box-shadow:0 0 0 0 rgba(255,214,224,0),0 0 0 0 rgba(255,209,102,0);}
 }
 .letter-section h2{
-  font-family:'Playfair Display','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','SimSun',serif;
   font-size:clamp(1.4rem,3.2vw,1.9rem);font-weight:600;
   color:var(--accent-rose);margin-bottom:22px;letter-spacing:0.04em;
 }
@@ -212,7 +212,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 .breath-circle.exhale~.breath-ring-outer{transform:translate(-50%,-50%) scale(1.1);opacity:0.15;}
 .breath-text{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  font-family:'Cormorant Garamond','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','Times New Roman',serif;
   font-size:1.4rem;letter-spacing:0.15em;color:var(--text-primary);
   transition:opacity 0.6s ease;pointer-events:none;
 }
@@ -273,7 +273,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   text-align:center;margin-bottom:32px;z-index:2;
 }
 .lantern-section-header h2{
-  font-family:'Playfair Display','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','SimSun',serif;
   font-size:clamp(1.2rem,2.8vw,1.6rem);color:var(--accent-gold);
   letter-spacing:0.05em;margin-bottom:8px;
 }
@@ -291,7 +291,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 #affirmation-section.revealed{opacity:1;transform:translateY(0);}
 .affirmation-header{text-align:center;margin-bottom:48px;}
 .affirmation-header h2{
-  font-family:'Playfair Display','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','SimSun',serif;
   font-size:clamp(1.3rem,3vw,1.7rem);color:var(--accent-gold);
   letter-spacing:0.05em;margin-bottom:8px;
 }
@@ -317,7 +317,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 .affirmation-card .card-icon{font-size:1.6rem;margin-bottom:10px;opacity:0.7;transition:opacity 0.4s ease,transform 0.4s ease;}
 .affirmation-card:hover .card-icon{opacity:1;transform:scale(1.15);}
 .affirmation-card .card-text{
-  font-family:'Noto Serif SC',serif;font-size:0.95rem;line-height:1.6;
+  font-family:'STSong','PingFang SC','SimSun',serif;font-size:0.95rem;line-height:1.6;
   color:var(--text-primary);letter-spacing:0.06em;
 }
 
@@ -330,7 +330,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 #writeback-section.revealed{opacity:1;transform:translateY(0);}
 .writeback-header{text-align:center;margin-bottom:36px;}
 .writeback-header h2{
-  font-family:'Playfair Display','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','SimSun',serif;
   font-size:clamp(1.3rem,3vw,1.7rem);color:var(--accent-rose);letter-spacing:0.05em;margin-bottom:8px;
 }
 .writeback-header p{font-size:0.78rem;color:var(--text-secondary);letter-spacing:0.1em;}
@@ -342,7 +342,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 .write-paper textarea{
   width:100%;min-height:200px;background:transparent;border:none;outline:none;resize:vertical;
-  font-family:'Noto Serif SC','Ma Shan Zheng',serif;font-size:1rem;line-height:2;
+  font-family:'STKaiti','KaiTi','STSong',serif;font-size:1rem;line-height:2;
   color:var(--text-primary);letter-spacing:0.05em;
 }
 .write-paper textarea::placeholder{color:rgba(200,185,215,0.35);letter-spacing:0.08em;}
@@ -366,7 +366,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 /* ── Floating Released Thoughts ── */
 .floating-thought{
   position:fixed;pointer-events:none;z-index:12;
-  font-family:'Ma Shan Zheng','Noto Serif SC',serif;
+  font-family:'STKaiti','KaiTi','STSong',serif;
   font-size:1.2rem;color:var(--accent-gold);
   white-space:nowrap;
   animation:thoughtRise 4s ease-out forwards;
@@ -450,11 +450,11 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 .envelope.opened .letter-inner{opacity:1;}
 .letter-inner .letter-header{
-  font-family:'Playfair Display',serif;font-size:1.4rem;color:#b85a6e;
+  font-family:Georgia,'STSong',serif;font-size:1.4rem;color:#b85a6e;
   margin-bottom:18px;text-align:center;letter-spacing:0.04em;
 }
 .letter-inner .letter-closing{text-align:right;margin-top:22px;color:#b85a6e;font-style:italic;letter-spacing:0.04em;}
-.letter-inner .letter-signature{text-align:right;margin-top:4px;font-family:'Playfair Display',serif;font-size:1.1rem;color:#c06a7a;}
+.letter-inner .letter-signature{text-align:right;margin-top:4px;font-family:Georgia,'STSong',serif;font-size:1.1rem;color:#c06a7a;}
 .envelope-hint{
   text-align:center;margin-top:28px;font-size:0.78rem;color:var(--text-secondary);
   letter-spacing:0.18em;opacity:0.65;transition:opacity 0.4s ease;
@@ -501,7 +501,7 @@ footer{text-align:center;padding:80px 0 50px;opacity:0.5;font-size:0.78rem;color
 #mood-selector{
   position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:30;
   display:flex;gap:4px;padding:6px 10px;
-  background:rgba(10,14,26,0.7);backdrop-filter:blur(16px);
+  background:rgba(10,14,26,0.85);
   border:1px solid rgba(255,255,255,0.06);border-radius:100px;
   opacity:0;transition:opacity 0.8s ease;pointer-events:none;
 }
@@ -563,10 +563,10 @@ body.mood-dream{
 .mantra-container{text-align:center;max-width:560px;position:relative;z-index:2;}
 .mantra-ornament{
   font-size:1.2rem;color:var(--accent-gold);opacity:0.35;letter-spacing:0.5em;
-  margin-bottom:20px;font-family:'Cormorant Garamond',serif;font-style:italic;
+  margin-bottom:20px;font-family:Georgia,'STSong',serif;font-style:italic;
 }
 .mantra-line{
-  font-family:'Cormorant Garamond','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','Times New Roman',serif;
   font-size:clamp(1.3rem,3vw,1.8rem);font-weight:400;font-style:italic;
   color:var(--text-primary);line-height:2;letter-spacing:0.08em;
   opacity:0;transform:translateY(20px);transition:all 0.8s ease;
@@ -609,7 +609,7 @@ body.mood-dream{
 /* ── Footer Enhanced ── */
 footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-secondary);letter-spacing:0.15em;line-height:2;}
 .footer-heart{color:var(--accent-rose);opacity:0.5;font-size:0.7rem;display:block;margin-bottom:6px;}
-.footer-time{font-size:0.65rem;opacity:0.35;letter-spacing:0.2em;margin-top:12px;font-family:'Cormorant Garamond',serif;font-style:italic;}
+.footer-time{font-size:0.65rem;opacity:0.35;letter-spacing:0.2em;margin-top:12px;font-family:Georgia,'STSong',serif;font-style:italic;}
 
 /* ── Hero Screen-Shake ── */
 .hero-float-particle{
@@ -633,11 +633,11 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
 }
 #reflection-overlay.visible{opacity:1;}
 .reflection-prompt{
-  font-family:'Cormorant Garamond','Noto Serif SC',serif;
+  font-family:Georgia,'STSong','Times New Roman',serif;
   font-size:0.78rem;font-style:italic;color:var(--text-secondary);
   text-align:right;line-height:1.8;letter-spacing:0.06em;
   padding:16px 20px;
-  background:rgba(10,14,26,0.6);backdrop-filter:blur(12px);
+  background:rgba(10,14,26,0.85);
   border:1px solid rgba(255,255,255,0.04);border-radius:8px;
   max-width:220px;box-shadow:0 8px 32px rgba(0,0,0,0.3);
   transition:all 0.4s ease;
@@ -692,6 +692,19 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
   .write-actions{flex-direction:column;gap:12px;}
 }
 </style>
+<noscript>
+  <style>
+    .letter-section,#hero,#breathing-section,#lantern-section,
+    #affirmation-section,#writeback-section,#mantra-section,
+    #envelope-section,#mood-selector,#reflection-overlay,
+    .mantra-line,.letter-section .stage-badge,#hero .subtitle,
+    #hero .scroll-hint,.mantra-sub
+    {opacity:1 !important;transform:none !important;pointer-events:auto !important;}
+    .typewriter-text{min-height:auto;}
+    .typewriter-text::after{content:attr(data-text);}
+    .typewriter-text .cursor{display:none;}
+  </style>
+</noscript>
 </head>
 <body>
 
