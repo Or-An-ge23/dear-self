@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>浜茬埍鐨勮嚜宸?鈥?涓€灏佸啓缁欒嚜宸辩殑鎯呬功</title>
+<title>亲爱的自己 — 一封写给自己的情书</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@ body{
   transition:background 0.6s ease;
 }
 
-/* 鈹€鈹€ Dawn Overlay 鈹€鈹€ */
+/* ── Dawn Overlay ── */
 #dawn-overlay{
   position:fixed;top:0;left:0;width:100%;height:100%;
   pointer-events:none;z-index:0;
@@ -51,11 +51,11 @@ body{
   opacity:0;transition:opacity 0.6s ease;
 }
 
-/* 鈹€鈹€ Canvases 鈹€鈹€ */
+/* ── Canvases ── */
 #starfield{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 #sparkle-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:11;}
 
-/* 鈹€鈹€ Mouse Light 鈹€鈹€ */
+/* ── Mouse Light ── */
 #mouse-light{
   position:fixed;pointer-events:none;z-index:1;
   width:500px;height:500px;border-radius:50%;
@@ -65,7 +65,7 @@ body{
   transform:translate(-50%,-50%);opacity:0;transition:opacity 0.4s;
 }
 
-/* 鈹€鈹€ Meteor Container 鈹€鈹€ */
+/* ── Meteor Container ── */
 #meteor-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:10;}
 .meteor{
   position:absolute;width:2.5px;height:2.5px;background:#fff;border-radius:50%;opacity:0;
@@ -79,7 +79,7 @@ body{
 .meteor.bright{width:3px;height:3px;box-shadow:0 0 10px 3px rgba(255,255,255,1),0 0 25px 8px rgba(255,241,184,0.7),0 0 45px 15px rgba(255,209,102,0.4);}
 .meteor.bright::after{width:180px;height:2px;}
 
-/* 鈹€鈹€ Progress Nav 鈹€鈹€ */
+/* ── Progress Nav ── */
 #progress-nav{
   position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:20;
   display:flex;flex-direction:column;gap:14px;
@@ -96,10 +96,10 @@ body{
 .progress-dot:hover::after,.progress-dot.active::after{opacity:1;}
 .progress-dot.active{background:var(--accent-rose);box-shadow:0 0 10px var(--glow-rose);}
 
-/* 鈹€鈹€ Main 鈹€鈹€ */
+/* ── Main ── */
 main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 120px;}
 
-/* 鈹€鈹€ Hero 鈹€鈹€ */
+/* ── Hero ── */
 #hero{
   min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;opacity:0;transition:opacity 1.5s ease;
@@ -133,7 +133,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 .scroll-hint p{font-size:0.68rem;letter-spacing:0.22em;color:var(--text-secondary);}
 
-/* 鈹€鈹€ Letter Sections 鈹€鈹€ */
+/* ── Letter Sections ── */
 .letter-section{
   min-height:75vh;display:flex;align-items:center;padding:70px 0;
   opacity:0;transform:translateY(50px);
@@ -180,7 +180,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 @keyframes cursorBlink{0%,100%{opacity:1;}50%{opacity:0;}}
 
-/* 鈹€鈹€ Breathing Section 鈹€鈹€ */
+/* ── Breathing Section ── */
 #breathing-section{
   min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:60px 0;opacity:0;transform:translateY(40px);
@@ -218,7 +218,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 }
 .breath-hint{margin-top:36px;font-size:0.78rem;color:var(--text-secondary);letter-spacing:0.12em;opacity:0.6;}
 
-/* 鈹€鈹€ Sky Lanterns Section 鈹€鈹€ */
+/* ── Sky Lanterns Section ── */
 #lantern-section{
   min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:60px 0;position:relative;overflow:hidden;
@@ -283,7 +283,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   letter-spacing:0.1em;z-index:2;opacity:0.6;
 }
 
-/* 鈹€鈹€ Affirmation Cards 鈹€鈹€ */
+/* ── Affirmation Cards ── */
 #affirmation-section{
   min-height:70vh;padding:60px 0;opacity:0;transform:translateY(40px);
   transition:opacity 0.8s ease,transform 0.8s ease;
@@ -321,7 +321,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   color:var(--text-primary);letter-spacing:0.06em;
 }
 
-/* 鈹€鈹€ Write-Back Section 鈹€鈹€ */
+/* ── Write-Back Section ── */
 #writeback-section{
   min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:60px 0;opacity:0;transform:translateY(40px);
@@ -363,7 +363,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 .btn-release.sent{background:rgba(244,167,187,0.1);border-color:transparent;color:var(--accent-gold);pointer-events:none;}
 .release-ritual-hint{font-size:0.72rem;color:var(--text-secondary);opacity:0.6;letter-spacing:0.08em;}
 
-/* 鈹€鈹€ Floating Released Thoughts 鈹€鈹€ */
+/* ── Floating Released Thoughts ── */
 .floating-thought{
   position:fixed;pointer-events:none;z-index:12;
   font-family:'Ma Shan Zheng','Noto Serif SC',serif;
@@ -380,7 +380,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   100%{opacity:0;transform:translateY(-280px) scale(0.6);}
 }
 
-/* 鈹€鈹€ Envelope 鈹€鈹€ */
+/* ── Envelope ── */
 #envelope-section{
   min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:40px 0 80px;opacity:0;transform:translateY(40px);
@@ -426,7 +426,7 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
   transition:all 0.5s ease;
 }
 .wax-seal::after{
-  content:'鈾?;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  content:'♡';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   font-size:1.2rem;color:rgba(255,255,255,0.6);text-shadow:0 1px 2px rgba(0,0,0,0.2);
 }
 .envelope.opened .wax-seal{opacity:0;transform:translate(-50%,-50%) scale(0.4);}
@@ -468,10 +468,10 @@ main{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px 12
 .close-letter:hover{background:rgba(244,167,187,0.08);border-color:var(--accent-rose);}
 .envelope-wrapper.interacted .close-letter{display:inline-block;}
 
-/* 鈹€鈹€ Footer 鈹€鈹€ */
+/* ── Footer ── */
 footer{text-align:center;padding:80px 0 50px;opacity:0.5;font-size:0.78rem;color:var(--text-secondary);letter-spacing:0.15em;line-height:2;}
 
-/* 鈹€鈹€ Grain Texture 鈹€鈹€ */
+/* ── Grain Texture ── */
 #grain-overlay{
   position:fixed;top:0;left:0;width:100%;height:100%;
   pointer-events:none;z-index:9;opacity:0.035;
@@ -479,7 +479,7 @@ footer{text-align:center;padding:80px 0 50px;opacity:0.5;font-size:0.78rem;color
   background-repeat:repeat;background-size:256px 256px;
 }
 
-/* 鈹€鈹€ Reading Progress Bar 鈹€鈹€ */
+/* ── Reading Progress Bar ── */
 #progress-bar{
   position:fixed;top:0;left:0;width:0;height:1.5px;z-index:100;
   background:linear-gradient(90deg,rgba(255,209,102,0.3),var(--accent-rose),rgba(255,209,102,0.3));
@@ -487,17 +487,17 @@ footer{text-align:center;padding:80px 0 50px;opacity:0.5;font-size:0.78rem;color
   transition:width 0.1s linear;border-radius:0 2px 2px 0;
 }
 
-/* 鈹€鈹€ Custom Scrollbar 鈹€鈹€ */
+/* ── Custom Scrollbar ── */
 ::-webkit-scrollbar{width:4px;}
 ::-webkit-scrollbar-track{background:var(--bg-abyss);}
 ::-webkit-scrollbar-thumb{background:rgba(244,167,187,0.25);border-radius:4px;}
 ::-webkit-scrollbar-thumb:hover{background:rgba(244,167,187,0.45);}
 
-/* 鈹€鈹€ Selection 鈹€鈹€ */
+/* ── Selection ── */
 ::selection{background:rgba(244,167,187,0.3);color:var(--text-primary);}
 ::-moz-selection{background:rgba(244,167,187,0.3);color:var(--text-primary);}
 
-/* 鈹€鈹€ Mood Theme Selector 鈹€鈹€ */
+/* ── Mood Theme Selector ── */
 #mood-selector{
   position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:30;
   display:flex;gap:4px;padding:6px 10px;
@@ -539,7 +539,7 @@ footer{text-align:center;padding:80px 0 50px;opacity:0.5;font-size:0.78rem;color
 }
 .mood-btn:hover .mood-tooltip{opacity:1;}
 
-/* 鈹€鈹€ Mood Theme CSS Variables 鈹€鈹€ */
+/* ── Mood Theme CSS Variables ── */
 body.mood-dawn{
   --bg-abyss: #0f0a12; --bg-deep: #18121e; --bg-night: #2a1a30; --bg-twilight: #382238;
   --text-primary: #f0e4e8; --text-secondary: #d4c0c8;
@@ -553,7 +553,7 @@ body.mood-dream{
   --glow-rose: rgba(184,160,232,0.3); --glow-gold: rgba(200,184,240,0.2);
 }
 
-/* 鈹€鈹€ Poetry Mantra Section 鈹€鈹€ */
+/* ── Poetry Mantra Section ── */
 #mantra-section{
   min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:60px 0;opacity:0;transform:translateY(40px);
@@ -592,11 +592,11 @@ body.mood-dream{
 }
 #mantra-section.revealed .mantra-sub{opacity:0.5;}
 #mantra-section::before{
-  content:'鉁?;position:absolute;top:10%;left:50%;transform:translateX(-50%);
+  content:'✧';position:absolute;top:10%;left:50%;transform:translateX(-50%);
   font-size:0.8rem;color:var(--accent-gold);opacity:0.12;letter-spacing:0.3em;
 }
 
-/* 鈹€鈹€ Section Sacred Divider 鈹€鈹€ */
+/* ── Section Sacred Divider ── */
 .sacred-divider{
   display:flex;align-items:center;justify-content:center;gap:14px;
   padding:20px 0;opacity:0.2;
@@ -606,12 +606,12 @@ body.mood-dream{
 }
 .sacred-divider .diamond{color:var(--accent-gold);font-size:0.5rem;}
 
-/* 鈹€鈹€ Footer Enhanced 鈹€鈹€ */
+/* ── Footer Enhanced ── */
 footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-secondary);letter-spacing:0.15em;line-height:2;}
 .footer-heart{color:var(--accent-rose);opacity:0.5;font-size:0.7rem;display:block;margin-bottom:6px;}
 .footer-time{font-size:0.65rem;opacity:0.35;letter-spacing:0.2em;margin-top:12px;font-family:'Cormorant Garamond',serif;font-style:italic;}
 
-/* 鈹€鈹€ Hero Screen-Shake 鈹€鈹€ */
+/* ── Hero Screen-Shake ── */
 .hero-float-particle{
   position:absolute;pointer-events:none;width:3px;height:3px;
   background:var(--accent-gold);border-radius:50%;
@@ -626,7 +626,7 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
   100%{opacity:0;transform:translateY(-280px) translateX(-5px) scale(0);}
 }
 
-/* 鈹€鈹€ Self-Reflection Prompt 鈹€鈹€ */
+/* ── Self-Reflection Prompt ── */
 #reflection-overlay{
   position:fixed;bottom:80px;right:24px;z-index:25;pointer-events:none;
   opacity:0;transition:opacity 0.6s ease;
@@ -646,12 +646,12 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
   color:var(--accent-rose);opacity:0.6;font-size:0.6rem;display:block;margin-bottom:4px;
 }
 
-/* 鈹€鈹€ Enhanced Envelope Letter 鈹€鈹€ */
+/* ── Enhanced Envelope Letter ── */
 .letter-inner .letter-body-text{margin-bottom:12px;text-indent:0;font-size:0.82rem;line-height:2.05;color:#3a3040;}
 .letter-inner .letter-signature-line{width:80px;height:1px;background:#d4b8c0;margin:16px 0 8px auto;}
 .letter-inner .letter-ps{font-size:0.75rem;color:#9a7a88;margin-top:16px;font-style:italic;border-top:1px solid rgba(0,0,0,0.04);padding-top:12px;}
 
-/* 鈹€鈹€ Lantern Section Ambience 鈹€鈹€ */
+/* ── Lantern Section Ambience ── */
 .lantern-ambient-glow{
   position:absolute;top:50%;left:50%;width:500px;height:500px;
   transform:translate(-50%,-50%);
@@ -659,7 +659,7 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
   pointer-events:none;z-index:0;border-radius:50%;
 }
 
-/* 鈹€鈹€ Enhanced Responsive 鈹€鈹€ */
+/* ── Enhanced Responsive ── */
 @media(max-width:640px){
   #mood-selector{bottom:16px;padding:4px 8px;gap:3px;}
   .mood-btn{width:24px;height:24px;}
@@ -669,7 +669,7 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
   .mantra-line{font-size:clamp(1rem,4vw,1.3rem);}
 }
 
-/* 鈹€鈹€ Responsive 鈹€鈹€ */
+/* ── Responsive ── */
 @media(max-width:640px){
   main{padding:0 16px 80px;}
   #progress-nav{right:8px;gap:10px;}
@@ -704,164 +704,164 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
 <div id="progress-bar"></div>
 
 <div id="mood-selector">
-  <button class="mood-btn active" data-mood="starlight" title="鏄熷">
+  <button class="mood-btn active" data-mood="starlight" title="星夜">
     <span class="mood-dot"></span>
-    <span class="mood-tooltip">鏄熷</span>
+    <span class="mood-tooltip">星夜</span>
   </button>
-  <button class="mood-btn" data-mood="dawn" title="鏅ㄦ洣">
+  <button class="mood-btn" data-mood="dawn" title="晨曦">
     <span class="mood-dot"></span>
-    <span class="mood-tooltip">鏅ㄦ洣</span>
+    <span class="mood-tooltip">晨曦</span>
   </button>
-  <button class="mood-btn" data-mood="dream" title="姊﹀">
+  <button class="mood-btn" data-mood="dream" title="梦境">
     <span class="mood-dot"></span>
-    <span class="mood-tooltip">姊﹀</span>
+    <span class="mood-tooltip">梦境</span>
   </button>
 </div>
 
 <div id="reflection-overlay">
   <div class="reflection-prompt" id="reflectionPrompt">
-    <span class="q-mark">鈥?闂嚜宸?鈥?/span>
-    浠婂ぉ锛屼綘鏈€鎯冲鑷繁璇翠粈涔堬紵
+    <span class="q-mark">— 问自己 —</span>
+    今天，你最想对自己说什么？
   </div>
 </div>
 
-<nav id="progress-nav" aria-label="椤甸潰瀵艰埅"></nav>
+<nav id="progress-nav" aria-label="页面导航"></nav>
 
 <main>
-  <!-- 鈺愨晲鈺?HERO 鈺愨晲鈺?-->
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
-    <h1>浜茬埍鐨勮嚜宸憋紝<br>杈涜嫤浜?/h1>
-    <p class="subtitle">浣犲€煎緱琚俯鏌斾互寰?/p>
+    <h1>亲爱的自己，<br>辛苦了</h1>
+    <p class="subtitle">你值得被温柔以待</p>
     <div id="hero-particles"></div>
-    <div class="scroll-hint"><span></span><p>鍚戜笅闃呰</p></div>
+    <div class="scroll-hint"><span></span><p>向下阅读</p></div>
   </section>
 
-  <!-- 鈺愨晲鈺?6 LETTER SECTIONS 鈺愨晲鈺?-->
-  <section class="letter-section" data-stage="childhood" data-label="绔ュ勾">
+  <!-- ═══ 6 LETTER SECTIONS ═══ -->
+  <section class="letter-section" data-stage="childhood" data-label="童年">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">绔?骞?/div>
-      <h2>鑷撮偅涓皬灏忕殑浣?/h2>
-      <div class="typewriter-text" data-text="灏忔椂鍊欑殑浣狅紝閭ｄ箞灏忥紝閭ｄ箞鏌旇蒋锛屽嵈宸茬粡瀛︿細浜嗚瀵熻繖涓笘鐣屻€傞偅涓共鍦ㄨ钀界湅铓傝殎鎼鐨勫皬浜哄効锛岄偅涓洜涓轰竴鏈佃姳寮€鑰屾儕鍠滃崐澶╃殑绾湡鐏甸瓊鈥斺€斾綘鐢ㄦ渶娓呮緢鐨勭溂鐫涳紝鐪嬭浜嗚繖涓笘鐣屾渶缁嗗井鐨勭編濂姐€傝阿璋綘锛屽湪浠€涔堥兘涓嶆噦鐨勫勾绾紝灏卞凡缁忔噦寰楀杽鑹笌濂藉銆傞偅浠界函鐪燂紝鏄悗鏉ユ墍鏈夊媷姘旂殑璧风偣銆?></div>
+      <div class="stage-badge">童 年</div>
+      <h2>致那个小小的你</h2>
+      <div class="typewriter-text" data-text="小时候的你，那么小，那么柔软，却已经学会了观察这个世界。那个蹲在角落看蚂蚁搬家的小人儿，那个因为一朵花开而惊喜半天的纯真灵魂——你用最清澈的眼睛，看见了这个世界最细微的美好。谢谢你，在什么都不懂的年纪，就已经懂得善良与好奇。那份纯真，是后来所有勇气的起点。"></div>
     </div>
   </section>
 
-  <section class="letter-section" data-stage="adolescence" data-label="灏戝勾">
+  <section class="letter-section" data-stage="adolescence" data-label="少年">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">灏?骞?/div>
-      <h2>鑷撮偅涓晱鎰熺殑浣?/h2>
-      <div class="typewriter-text" data-text="鍗佸嚑宀佺殑浣狅紝寮€濮嬫湁浜嗚嚜宸辩殑蹇冧簨銆傞偅浜涗笉琚悊瑙ｇ殑瀛ょ嫭銆佽涓嶅嚭鍙ｇ殑濮斿眻銆佽翰鍦ㄨ绐濋噷鍋峰伔娴佹唱鐨勫鏅氣€斺€斾綘娓存湜琚湅瑙侊紝鍙堝鎬曡鐪嬬┛銆傚彲鍗充娇濡傛锛屼綘浠嶇劧姣忓ぉ娓呮櫒鑳岃捣涔﹀寘锛岃繋鐫€鏈濋槼鍑哄彂銆備綘鐨勮剢寮变笉鏄己鐐癸紝瀹冩槸浣犳劅鍙楄繖涓笘鐣岀殑澶╃嚎銆傝阿璋綘锛屼繚鎶や簡閭ｉ鏌旇蒋鍙堟晱鎰熺殑蹇冦€?></div>
+      <div class="stage-badge">少 年</div>
+      <h2>致那个敏感的你</h2>
+      <div class="typewriter-text" data-text="十几岁的你，开始有了自己的心事。那些不被理解的孤独、说不出口的委屈、躲在被窝里偷偷流泪的夜晚——你渴望被看见，又害怕被看穿。可即使如此，你仍然每天清晨背起书包，迎着朝阳出发。你的脆弱不是缺点，它是你感受这个世界的天线。谢谢你，保护了那颗柔软又敏感的心。"></div>
     </div>
   </section>
 
-  <section class="letter-section" data-stage="confusion" data-label="杩疯尗">
+  <section class="letter-section" data-stage="confusion" data-label="迷茫">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">杩?鑼?/div>
-      <h2>鑷撮偅涓鎵炬柟鍚戠殑浣?/h2>
-      <div class="typewriter-text" data-text="浜屽崄宀佺殑璺彛锛屼綘绔欏湪閭ｉ噷锛岀湅鐫€鏃犳暟鏉″垎宀旂殑璺紝涓嶇煡閬撳摢涓€鏉￠€氬悜浣犳兂鍘荤殑鍦版柟銆備綘瀹虫€曢€夐敊銆佸鎬曡緶璐熸湡寰呫€佸鎬曟垚涓轰笉浜嗚嚜宸辨兂鎴愪负鐨勪汉銆傚彲浣犵煡閬撳悧锛熻糠鑼笉鏄蒋寮憋紝瀹冩伆鎭拌鏄庝綘鍦ㄤ箮鈥斺€斿湪涔庤嚜宸卞皢鎴愪负涓€涓€庢牱鐨勪汉銆傞偅浜涜緱杞弽渚х殑澶滄櫄锛岄兘鏄綘鍦ㄨ鐪熷寰呰嚜宸辩殑浜虹敓銆?></div>
+      <div class="stage-badge">迷 茫</div>
+      <h2>致那个寻找方向的你</h2>
+      <div class="typewriter-text" data-text="二十岁的路口，你站在那里，看着无数条分岔的路，不知道哪一条通向你想去的地方。你害怕选错、害怕辜负期待、害怕成为不了自己想成为的人。可你知道吗？迷茫不是软弱，它恰恰说明你在乎——在乎自己将成为一个怎样的人。那些辗转反侧的夜晚，都是你在认真对待自己的人生。"></div>
     </div>
   </section>
 
-  <section class="letter-section" data-stage="resilience" data-label="浣庤胺">
+  <section class="letter-section" data-stage="resilience" data-label="低谷">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">浣?璋?/div>
-      <h2>鑷撮偅涓穼鍊掑張鐖捣鐨勪綘</h2>
-      <div class="typewriter-text" data-text="閭ｄ簺浣犱互涓哄啀涔熺珯涓嶈捣鏉ョ殑鏃跺埢鈥斺€旀繁澶滃姞鐝埌宕╂簝鍗寸瑧鐫€璇淬€屾病浜嬨€嶃€佽閲嶈鐨勪汉鍚﹀畾鍚庣殑鑷垜鎬€鐤戙€佷竴涓汉鍦ㄥ嚭绉熷眿閲屽鐫€澶╄姳鏉垮彂鍛嗙殑榛勬槒銆傛瘡涓€娆¤穼鍊掍箣鍚庯紝浣犻兘閫夋嫨浜嗙埇璧锋潵銆備篃璁稿Э鍔夸笉澶熶紭闆咃紝涔熻鑺变簡寰堝鏃堕棿銆備絾閲嶈鐨勬槸锛氫綘浠庢潵娌℃湁鐪熸鏀惧純杩囪嚜宸便€傝阿璋綘涓€鐩存病鏈夋斁寮冦€?></div>
+      <div class="stage-badge">低 谷</div>
+      <h2>致那个跌倒又爬起的你</h2>
+      <div class="typewriter-text" data-text="那些你以为再也站不起来的时刻——深夜加班到崩溃却笑着说「没事」、被重要的人否定后的自我怀疑、一个人在出租屋里对着天花板发呆的黄昏。每一次跌倒之后，你都选择了爬起来。也许姿势不够优雅，也许花了很多时间。但重要的是：你从来没有真正放弃过自己。谢谢你一直没有放弃。"></div>
     </div>
   </section>
 
-  <section class="letter-section" data-stage="now" data-label="姝ゅ埢">
+  <section class="letter-section" data-stage="now" data-label="此刻">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">姝?鍒?/div>
-      <h2>鑷寸幇鍦ㄧ殑浣?/h2>
-      <div class="typewriter-text" data-text="鐜板湪鐨勪綘锛岃繕鍦ㄤ负寰堝浜嬫儏鐒﹁檻鍚楋紵杩樺湪澶滄繁浜洪潤鐨勬椂鍊欙紝涓€閬嶉亶鍦拌拷闂嚜宸便€屽涓嶅濂姐€嶅悧锛熻鍋滀竴鍋滐紝娣辨繁鍦板懠鍚搞€備綘宸茬粡鍋氬緱寰堝ソ浜嗏€斺€旈偅浜涜法瓒婄殑灞变笜銆佸害杩囩殑澶滄櫄銆佸捊涓嬬殑鐪兼唱锛屾病鏈夋秷澶憋紝瀹冧滑鎴愪负浜嗕綘楠ㄨ閲岀殑鍔涢噺銆傚厑璁歌嚜宸辨參鎱㈠湴銆佹俯鏌斿湴銆佹寜鐓ц嚜宸辩殑鑺傚鐢熼暱銆備綘涓嶅繀瀹岀編锛屼綘鍙渶瑕佺湡瀹炪€?></div>
+      <div class="stage-badge">此 刻</div>
+      <h2>致现在的你</h2>
+      <div class="typewriter-text" data-text="现在的你，还在为很多事情焦虑吗？还在夜深人静的时候，一遍遍地追问自己「够不够好」吗？请停一停，深深地呼吸。你已经做得很好了——那些跨越的山丘、度过的夜晚、咽下的眼泪，没有消失，它们成为了你骨血里的力量。允许自己慢慢地、温柔地、按照自己的节奏生长。你不必完美，你只需要真实。"></div>
     </div>
   </section>
 
-  <section class="letter-section" data-stage="future" data-label="鏈潵">
+  <section class="letter-section" data-stage="future" data-label="未来">
     <div class="content-wrapper">
       <div class="glow-ring"></div>
-      <div class="stage-badge">鏈?鏉?/div>
-      <h2>鑷存槑澶╃殑浣?/h2>
-      <div class="typewriter-text" data-text="鏈潵鐨勬煇涓€澶╋紝褰撲綘鍥炲ご鐪嬭繖涓€鍒囷紝浣犱細鍙戠幇鎵€鏈夌殑缁忓巻閮芥湁鎰忎箟銆傞偅浜涜浣犵棝鑻︾殑锛屽閫犱簡浣犵殑闊ф€э紱閭ｄ簺璁╀綘蹇箰鐨勶紝婊嬪吇浜嗕綘鐨勭伒榄傘€備綘涓嶉渶瑕佹垚涓轰换浣曚汉鏈熷緟鐨勬牱瀛愨€斺€斾綘鍙渶瑕佹垚涓轰綘鑷繁锛岄偅涓竴鐩村湪鎴愰暱銆佷粠鏈仠姝㈢埍鐨勮嚜宸便€傛効浣犳案杩滆寰楋細浣犲€煎緱琚繖涓栫晫娓╂煍浠ュ緟锛岃€岃繖浠芥俯鏌旓紝棣栧厛瑕佷粠浣犺嚜宸卞紑濮嬨€?></div>
+      <div class="stage-badge">未 来</div>
+      <h2>致明天的你</h2>
+      <div class="typewriter-text" data-text="未来的某一天，当你回头看这一切，你会发现所有的经历都有意义。那些让你痛苦的，塑造了你的韧性；那些让你快乐的，滋养了你的灵魂。你不需要成为任何人期待的样子——你只需要成为你自己，那个一直在成长、从未停止爱的自己。愿你永远记得：你值得被这世界温柔以待，而这份温柔，首先要从你自己开始。"></div>
     </div>
   </section>
 
-  <!-- 鈺愨晲鈺?BREATHING 鈺愨晲鈺?-->
+  <!-- ═══ BREATHING ═══ -->
   <section id="breathing-section">
     <div class="breath-circle-container">
       <div class="breath-circle" id="breathCircle"></div>
       <div class="breath-ring-outer" style="width:100%;height:100%;"></div>
       <div class="breath-ring-outer" style="width:80%;height:80%;opacity:0.3;"></div>
-      <div class="breath-text" id="breathText">闈欎笅鏉?/div>
+      <div class="breath-text" id="breathText">静下来</div>
     </div>
-    <p class="breath-hint">璺熺潃鑺傚锛岀粰鑷繁涓€鍒嗛挓鐨勬俯鏌?/p>
+    <p class="breath-hint">跟着节奏，给自己一分钟的温柔</p>
   </section>
 
-  <!-- 鈺愨晲鈺?SKY LANTERNS 鈺愨晲鈺?-->
+  <!-- ═══ SKY LANTERNS ═══ -->
   <section id="lantern-section">
     <div class="lantern-section-header">
-      <h2>鏀句竴鐩忓ぉ鐏?/h2>
-      <p>鎶婂績閲岀殑璇濅氦缁欏绌猴紝璁╁畠鍙樻垚鏄熷厜</p>
+      <h2>放一盏天灯</h2>
+      <p>把心里的话交给夜空，让它变成星光</p>
     </div>
-    <div class="lantern-hint" id="lanternHint">鉁?鐐瑰嚮姝ゅ锛岀偣浜竴鐩忕伅 鉁?/div>
+    <div class="lantern-hint" id="lanternHint">✧ 点击此处，点亮一盏灯 ✧</div>
     <p class="lantern-counter" id="lanternCounter"></p>
   </section>
 
-  <!-- 鈺愨晲鈺?AFFIRMATION CARDS 鈺愨晲鈺?-->
+  <!-- ═══ AFFIRMATION CARDS ═══ -->
   <section id="affirmation-section">
     <div class="affirmation-header">
-      <h2>缁欒嚜宸变竴鍙ヨ偗瀹?/h2>
-      <p>杞昏交鏀惧湪蹇冮噷锛屼笉蹇呮€ョ潃鐩镐俊锛屽彧鏄厑璁稿畠浠瓨鍦?/p>
+      <h2>给自己一句肯定</h2>
+      <p>轻轻放在心里，不必急着相信，只是允许它们存在</p>
     </div>
     <div class="affirmation-grid">
-      <div class="affirmation-card"><div class="card-icon">鉁?/div><div class="card-text">浣犲€煎緱琚俯鏌斾互寰?/div></div>
-      <div class="affirmation-card"><div class="card-icon">鈽?/div><div class="card-text">浣犲凡缁忚冻澶熷ソ浜?/div></div>
-      <div class="affirmation-card"><div class="card-icon">鈾?/div><div class="card-text">浣犵殑鎰熷彈寰堥噸瑕?/div></div>
-      <div class="affirmation-card"><div class="card-icon">鉂?/div><div class="card-text">浣犱笉闇€瑕佸畬缇?/div></div>
-      <div class="affirmation-card"><div class="card-icon">鈦?/div><div class="card-text">浣犵殑瀛樺湪鏈韩灏辨槸绀肩墿</div></div>
-      <div class="affirmation-card"><div class="card-icon">猸?/div><div class="card-text">浣犳瘮鑷繁鎯宠薄鐨勬洿鍧氬己</div></div>
+      <div class="affirmation-card"><div class="card-icon">✦</div><div class="card-text">你值得被温柔以待</div></div>
+      <div class="affirmation-card"><div class="card-icon">☽</div><div class="card-text">你已经足够好了</div></div>
+      <div class="affirmation-card"><div class="card-icon">♡</div><div class="card-text">你的感受很重要</div></div>
+      <div class="affirmation-card"><div class="card-icon">❋</div><div class="card-text">你不需要完美</div></div>
+      <div class="affirmation-card"><div class="card-icon">⁕</div><div class="card-text">你的存在本身就是礼物</div></div>
+      <div class="affirmation-card"><div class="card-icon">⭓</div><div class="card-text">你比自己想象的更坚强</div></div>
     </div>
   </section>
 
-  <!-- 鈺愨晲鈺?WRITE BACK 鈺愨晲鈺?-->
+  <!-- ═══ WRITE BACK ═══ -->
   <section id="writeback-section">
     <div class="writeback-header">
-      <h2>鍐欎竴灏佸洖淇?/h2>
-      <p>瀵硅嚜宸辫鐐逛粈涔堝惂鈥斺€斾换浣曚綘鎯宠鐨勮瘽</p>
+      <h2>写一封回信</h2>
+      <p>对自己说点什么吧——任何你想说的话</p>
     </div>
     <div class="write-paper">
       <div class="paper-lines"></div>
-      <textarea id="writeArea" placeholder="浜茬埍鐨勮嚜宸扁€? maxlength="500"></textarea>
+      <textarea id="writeArea" placeholder="亲爱的自己…" maxlength="500"></textarea>
     </div>
     <div class="write-actions">
-      <button class="btn-release" id="btnRelease">鉁?鏀鹃杩欎簺璇濓紝璁╂槦鏄熷惉瑙?鉁?/button>
+      <button class="btn-release" id="btnRelease">✧ 放飞这些话，让星星听见 ✧</button>
       <span class="release-ritual-hint" id="charCount">0 / 500</span>
     </div>
   </section>
 
-  <!-- 鈺愨晲鈺?MANTRA POETRY 鈺愨晲鈺?-->
+  <!-- ═══ MANTRA POETRY ═══ -->
   <section id="mantra-section">
-    <div class="sacred-divider"><span class="line"></span><span class="diamond">鉁?/span><span class="line"></span></div>
+    <div class="sacred-divider"><span class="line"></span><span class="diamond">✦</span><span class="line"></span></div>
     <div class="mantra-container">
-      <div class="mantra-ornament">鈥?缁欒嚜宸辩殑璇?鈥?/div>
-      <div class="mantra-line">浣犲凡绌胯秺浜嗛偅涔堝婕暱鐨勫鏅?/div>
-      <div class="mantra-line">鐪夐棿鏈夐湝闆紝鐪煎簳鏈夋槦杈?/div>
-      <div class="mantra-line">涓嶅繀鎬ョ潃鎴愪负璋佺殑鏄ュぉ</div>
-      <div class="mantra-line">浣犳湰韬氨鏄竴鍦?<span class="highlight">鑺卞紑</span></div>
+      <div class="mantra-ornament">— 给自己的诗 —</div>
+      <div class="mantra-line">你已穿越了那么多漫长的夜晚</div>
+      <div class="mantra-line">眉间有霜雪，眼底有星辰</div>
+      <div class="mantra-line">不必急着成为谁的春天</div>
+      <div class="mantra-line">你本身就是一场 <span class="highlight">花开</span></div>
       <div class="mantra-divider"></div>
-      <div class="mantra-line">鎰夸綘涓庤繖涓栫晫</div>
-      <div class="mantra-line">鍦ㄦ俯鏌斾腑 <span class="gold">鍜岃В</span></div>
-      <div class="mantra-sub">鈥斺€?浣犲€煎緱鎵€鏈夌殑缇庡ソ锛岀紦缂撹€屾潵</div>
+      <div class="mantra-line">愿你与这世界</div>
+      <div class="mantra-line">在温柔中 <span class="gold">和解</span></div>
+      <div class="mantra-sub">—— 你值得所有的美好，缓缓而来</div>
     </div>
-    <div class="sacred-divider" style="margin-top:40px;"><span class="line"></span><span class="diamond">鉁?/span><span class="line"></span></div>
+    <div class="sacred-divider" style="margin-top:40px;"><span class="line"></span><span class="diamond">✦</span><span class="line"></span></div>
   </section>
 
-  <!-- 鈺愨晲鈺?ENVELOPE 鈺愨晲鈺?-->
+  <!-- ═══ ENVELOPE ═══ -->
   <section id="envelope-section">
     <div class="envelope-scene">
       <div class="envelope-wrapper" id="envelopeWrapper">
@@ -873,39 +873,41 @@ footer{text-align:center;padding:80px 0 80px;font-size:0.78rem;color:var(--text-
           </div>
           <div class="envelope-letter">
             <div class="letter-inner">
-              <div class="letter-header">缁欐垜鏈€浜茬埍鐨勮嚜宸?/div>
-              <p class="letter-body-text">鍐欒繖灏佷俊鐨勬椂鍊欙紝绐楀鐨勬槦鏄熸浜潃銆備笉鐭ラ亾浣犳鍒绘槸浠€涔堝績鎯呪€斺€斾篃璁告槸鐤叉儷鐨勩€佷篃璁告槸骞抽潤鐨勩€佷篃璁稿甫鐫€涓€涓濊涓嶆竻鐨勫鍗曘€備絾鏃犺鏄粈涔堬紝鎴戦兘鎯冲憡璇変綘锛?/p>
-              <p class="letter-body-text">浣犲凡缁忚蛋浜嗗緢杩滃緢杩滅殑璺€傞偅浜涗綘浠ヤ负璺ㄤ笉杩囧幓鐨勫潕锛屽洖澶寸湅鏃讹紝閮藉凡鎴愪簡韬悗鐨勯鏅€傞偅浜涜浣犲湪娣卞閲岃緱杞弽渚х殑鐒﹁檻锛屾渶缁堥兘鍦ㄦ椂闂撮噷鎱㈡參娑堣瀺銆?/p>
-              <p class="letter-body-text">浣犱篃璁镐笉鏄渶浼樼鐨勶紝涓嶆槸鏈€鑱槑鐨勶紝涓嶆槸鏈€骞歌繍鐨勩€備絾杩欓兘涓嶉噸瑕併€傞噸瑕佺殑鏄紝浣犱粠鏈湡姝ｆ斁寮冭繃鑷繁銆傚嵆浣垮湪鏈€榛戞殫鐨勬椂鍒伙紝浣犲唴蹇冩繁澶勪粛鏈変竴涓濆井鍏夛紝鏀拺鐫€浣犲湪姣忎釜娓呮櫒鐫佸紑鐪肩潧锛岀户缁悜鍓嶃€?/p>
-              <p class="letter-body-text">浣犳湁鏉冨埄鎰熷埌鐤叉儷锛屾湁鏉冨埄鍋跺皵鍋滀笅鏉ワ紝鏈夋潈鍒╄鐖扁€斺€斿寘鎷浣犺嚜宸辩殑鐖辨墍鍖呭洿銆傚杽寰呰嚜宸变笉鏄蒋寮憋紝鑰屾槸瀵硅嚜宸辨渶澶х殑璇氬疄銆?/p>
-              <p class="letter-body-text">鎵€浠ワ紝浠庝粖澶╁紑濮嬶紝璇曠潃瀵硅嚜宸辨俯鏌斾竴鐐瑰惂銆傚儚瀵瑰緟鏈€濂界殑鏈嬪弸閭ｆ牱锛屽儚瀵瑰緟鏈€鐖辩殑浜洪偅鏍枫€傚湪浣犳俯鏌斾互寰呰繖涓笘鐣岀殑鍚屾椂锛屽埆蹇樹簡鎶婅嚜宸变篃鏀捐繘閭ｄ唤娓╂煍閲屻€?/p>
-              <p class="letter-body-text">浣犲€煎緱琚俯鏌斾互寰呫€備竴鐩达紝閮藉€煎緱銆?/p>
-              <p class="letter-body-text" style="margin-top:18px;font-style:italic;opacity:0.7;">鏈変簺璺紝鍙兘涓€涓汉璧般€備絾浣犱粠鏉ヤ笉鏄韬竴浜衡€斺€斾綘杩樻湁浣犺嚜宸便€?/p>
+              <div class="letter-header">给我最亲爱的自己</div>
+              <p class="letter-body-text">写这封信的时候，窗外的星星正亮着。不知道你此刻是什么心情——也许是疲惫的、也许是平静的、也许带着一丝说不清的孤单。但无论是什么，我都想告诉你：</p>
+              <p class="letter-body-text">你已经走了很远很远的路。那些你以为跨不过去的坎，回头看时，都已成了身后的风景。那些让你在深夜里辗转反侧的焦虑，最终都在时间里慢慢消融。</p>
+              <p class="letter-body-text">你也许不是最优秀的，不是最聪明的，不是最幸运的。但这都不重要。重要的是，你从未真正放弃过自己。即使在最黑暗的时刻，你内心深处仍有一丝微光，支撑着你在每个清晨睁开眼睛，继续向前。</p>
+              <p class="letter-body-text">你有权利感到疲惫，有权利偶尔停下来，有权利被爱——包括被你自己的爱所包围。善待自己不是软弱，而是对自己最大的诚实。</p>
+              <p class="letter-body-text">所以，从今天开始，试着对自己温柔一点吧。像对待最好的朋友那样，像对待最爱的人那样。在你温柔以待这个世界的同时，别忘了把自己也放进那份温柔里。</p>
+              <p class="letter-body-text">你值得被温柔以待。一直，都值得。</p>
+              <p class="letter-body-text" style="margin-top:18px;font-style:italic;opacity:0.7;">有些路，只能一个人走。但你从来不是孤身一人——你还有你自己。</p>
               <div class="letter-signature-line"></div>
-              <p class="letter-closing">姘歌繙鐖变綘鐨勶紝</p>
-              <p class="letter-signature">浣犺嚜宸?/p>
-              <p class="letter-ps">鉁?姣忎竴澶╋紝閮芥槸閲嶆柊鐖辫嚜宸辩殑寮€濮?/p>
+              <p class="letter-closing">永远爱你的，</p>
+              <p class="letter-signature">你自己</p>
+              <p class="letter-ps">✧ 每一天，都是重新爱自己的开始</p>
             </div>
           </div>
         </div>
-        <p class="envelope-hint">鉁?鐐瑰嚮鎷嗗紑杩欏皝淇?鉁?/p>
-        <button class="close-letter" id="closeLetter">鏀惰捣淇′欢</button>
+        <p class="envelope-hint">✧ 点击拆开这封信 ✧</p>
+        <button class="close-letter" id="closeLetter">收起信件</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <span class="footer-heart">鈾?/span>
-    <p>浣犲€煎緱琚繖涓栫晫娓╂煍浠ュ緟</p>
-    <p>鑰岃繖浠芥俯鏌旓紝浠庝綘鑷繁寮€濮?/p>
+    <span class="footer-heart">♡</span>
+    <p>你值得被这世界温柔以待</p>
+    <p>而这份温柔，从你自己开始</p>
     <p class="footer-time" id="footerTime"></p>
   </footer>
 </main>
 
 <script>
 (function(){
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  STARFIELD CANVAS
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const starCanvas=document.getElementById('starfield');
+// ═══════════════════════════════════════════════════
+//  STARFIELD CANVAS
+// ═══════════════════════════════════════════════════
+const starCanvas=document.getElementById('starfield');
 const starCtx=starCanvas.getContext('2d');
 let W,H,stars=[],fireflies=[],cursorTrail=[],scrollOff=0;
 let mouseX=-500,mouseY=-500;
@@ -989,8 +991,10 @@ function drawStars(ts){
 makeStars();makeFF();requestAnimationFrame(drawStars);
 window.addEventListener('resize',()=>{resize();makeStars();makeFF();});
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  SPARKLE CANVAS (click sparkles)
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const sparkleCanvas=document.getElementById('sparkle-canvas');
+// ═══════════════════════════════════════════════════
+//  SPARKLE CANVAS (click sparkles)
+// ═══════════════════════════════════════════════════
+const sparkleCanvas=document.getElementById('sparkle-canvas');
 const spCtx=sparkleCanvas.getContext('2d');
 sparkleCanvas.width=W;sparkleCanvas.height=H;
 let sparkles=[];
@@ -1034,8 +1038,10 @@ document.addEventListener('click',(e)=>{
   burstSparkles(e.clientX,e.clientY,14);
 });
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  SCROLL 鈥?parallax + dawn
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const dawnOverlay=document.getElementById('dawn-overlay');
+// ═══════════════════════════════════════════════════
+//  SCROLL — parallax + dawn
+// ═══════════════════════════════════════════════════
+const dawnOverlay=document.getElementById('dawn-overlay');
 const dh=()=>document.documentElement.scrollHeight-window.innerHeight;
 window.addEventListener('scroll',()=>{
   const p=Math.min(1,Math.max(0,window.scrollY/dh()));
@@ -1045,8 +1051,10 @@ window.addEventListener('scroll',()=>{
   document.body.style.background=`linear-gradient(180deg,#060912 0%,#0a0e1a 30%,rgb(${17+wm},${24+Math.floor(wm*0.6)},${54+wm}) 60%,rgb(${26+wm},${31+Math.floor(wm*0.5)},${58+wm}) 100%)`;
 },{passive:true});
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  MOUSE LIGHT + CURSOR TRAIL
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const mouseLight=document.getElementById('mouse-light');
+// ═══════════════════════════════════════════════════
+//  MOUSE LIGHT + CURSOR TRAIL
+// ═══════════════════════════════════════════════════
+const mouseLight=document.getElementById('mouse-light');
 let curMX=-500,curMY=-500;
 const isTouch='ontouchstart' in window||navigator.maxTouchPoints>0;
 
@@ -1067,8 +1075,10 @@ if(!isTouch){
   })();
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  METEOR SHOWER
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const meteorContainer=document.getElementById('meteor-container');
+// ═══════════════════════════════════════════════════
+//  METEOR SHOWER
+// ═══════════════════════════════════════════════════
+const meteorContainer=document.getElementById('meteor-container');
 const meteorStyleEl=document.createElement('style');
 meteorStyleEl.textContent=`@keyframes meteorShoot{0%{opacity:0;transform:rotate(var(--angle,-35deg)) translate(0,0);}5%{opacity:1;}35%{opacity:1;transform:rotate(var(--angle,-35deg)) translate(-30vw,40vh);}60%{opacity:0.5;transform:rotate(var(--angle,-35deg)) translate(-55vw,75vh);}85%{opacity:0.08;transform:rotate(var(--angle,-35deg)) translate(-75vw,105vh);}100%{opacity:0;transform:rotate(var(--angle,-35deg)) translate(-90vw,130vh);}}`;
 document.head.appendChild(meteorStyleEl);
@@ -1096,27 +1106,33 @@ function scheduleMeteor(){
 }
 scheduleMeteor();
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  HERO
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const hero=document.getElementById('hero');
+// ═══════════════════════════════════════════════════
+//  HERO
+// ═══════════════════════════════════════════════════
+const hero=document.getElementById('hero');
 setTimeout(()=>hero.classList.add('visible'),1000);
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  TYPEWRITER
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?function typewriter(el,text,speed,cb){
+// ═══════════════════════════════════════════════════
+//  TYPEWRITER
+// ═══════════════════════════════════════════════════
+function typewriter(el,text,speed,cb){
   let i=0;el.innerHTML='<span class="cursor"></span>';
   function tick(){
     if(i<text.length){
       const span=document.createElement('span');span.textContent=text[i];
       el.insertBefore(span,el.querySelector('.cursor'));i++;
       const ch=text[i-1];
-      const d=(ch==='锛?||ch==='銆?||ch==='锛?||ch==='锛?||ch==='鈥?)?speed*3.5:(ch==='銆?||ch==='鈥?)?speed*2:speed;
+      const d=(ch==='，'||ch==='。'||ch==='？'||ch==='！'||ch==='…')?speed*3.5:(ch==='、'||ch==='—')?speed*2:speed;
       setTimeout(tick,d);
     }else{const c=el.querySelector('.cursor');if(c)c.remove();if(cb)cb();}
   }
   tick();
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  INTERSECTION OBSERVER 鈥?letters
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const letterSections=document.querySelectorAll('.letter-section');
+// ═══════════════════════════════════════════════════
+//  INTERSECTION OBSERVER — letters
+// ═══════════════════════════════════════════════════
+const letterSections=document.querySelectorAll('.letter-section');
 const revealedStages=new Set();
 const letterObs=new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
@@ -1138,18 +1154,20 @@ const extraObs=new IntersectionObserver((entries)=>{
 },{threshold:0.25});
 extraSecs.forEach(s=>extraObs.observe(s));
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  BREATHING
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const breathCircle=document.getElementById('breathCircle'),breathText=document.getElementById('breathText');
+// ═══════════════════════════════════════════════════
+//  BREATHING
+// ═══════════════════════════════════════════════════
+const breathCircle=document.getElementById('breathCircle'),breathText=document.getElementById('breathText');
 let breathPhase='inhale';
 function breathCycle(){
   if(breathPhase==='inhale'){
     breathCircle.classList.remove('exhale');breathCircle.classList.add('inhale');
-    breathText.textContent='鍚告皵...';breathPhase='hold';setTimeout(breathCycle,4000);
+    breathText.textContent='吸气...';breathPhase='hold';setTimeout(breathCycle,4000);
   }else if(breathPhase==='hold'){
-    breathText.textContent='鍋滅暀';breathPhase='exhale';setTimeout(breathCycle,1500);
+    breathText.textContent='停留';breathPhase='exhale';setTimeout(breathCycle,1500);
   }else{
     breathCircle.classList.remove('inhale');breathCircle.classList.add('exhale');
-    breathText.textContent='鍛兼皵...';breathPhase='inhale';setTimeout(breathCycle,5500);
+    breathText.textContent='呼气...';breathPhase='inhale';setTimeout(breathCycle,5500);
   }
 }
 const breathObs=new IntersectionObserver((entries)=>{
@@ -1157,22 +1175,24 @@ const breathObs=new IntersectionObserver((entries)=>{
 },{threshold:0.5});
 breathObs.observe(document.getElementById('breathing-section'));
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  SKY LANTERNS
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const lanternSection=document.getElementById('lantern-section');
+// ═══════════════════════════════════════════════════
+//  SKY LANTERNS
+// ═══════════════════════════════════════════════════
+const lanternSection=document.getElementById('lantern-section');
 const lanternHint=document.getElementById('lanternHint');
 const lanternCounter=document.getElementById('lanternCounter');
 let lanternCount=0;
 const lanternMessages=[
-  '鎰胯繖涓績鎰胯鏄熷厜鎺ヤ綇',
-  '鏈変竴鐩忕伅锛屾甯︾潃浣犵殑蹇冧簨椋炲悜澶滅┖',
-  '閭ｄ簺鏀句笉涓嬬殑锛屾鍦ㄥ彉鎴愬ぉ涓婄殑鏄熸槦',
-  '浣犵湅锛岃秺鏉ヨ秺澶氬厜浜簡',
-  '姣忎竴鐩忕伅锛岄兘鏄竴鍙ユ病璇村嚭鍙ｇ殑璇?,
-  '鏄熷厜涓嶈礋璧惰矾浜?,
-  '娓╂煍鐨勪汉锛岀粓灏嗚娓╂煍浠ュ緟',
-  '浠婂鐨勯锛屼細鎶婁綘鐨勫績鎰垮甫鍒拌繙鏂?,
-  '鎵€鏈夌殑娌夐噸锛岄兘鍙互鍙樺緱杞荤泩',
-  '浣犲凡缁忔斁浜嗚繖涔堝鐩忕伅锛屽績閲屼寒璧锋潵浜嗗悧锛?
+  '愿这个心愿被星光接住',
+  '有一盏灯，正带着你的心事飞向夜空',
+  '那些放不下的，正在变成天上的星星',
+  '你看，越来越多光亮了',
+  '每一盏灯，都是一句没说出口的话',
+  '星光不负赶路人',
+  '温柔的人，终将被温柔以待',
+  '今夜的风，会把你的心愿带到远方',
+  '所有的沉重，都可以变得轻盈',
+  '你已经放了这么多盏灯，心里亮起来了吗？'
 ];
 
 function createLantern(){
@@ -1192,11 +1212,11 @@ function createLantern(){
   lanternSection.appendChild(container);
   setTimeout(()=>container.remove(),dur*1000+500);
   lanternCount++;
-  lanternCounter.textContent='宸叉斁椋?'+lanternCount+' 鐩忕伅';
+  lanternCounter.textContent='已放飞 '+lanternCount+' 盏灯';
   if(lanternCount<=lanternMessages.length){
     lanternCounter.textContent=lanternMessages[lanternCount-1];
   }else if(lanternCount===lanternMessages.length+1){
-    lanternCounter.textContent='鎰跨箒鏄熶笌浣犲悓鍦?鉁?;
+    lanternCounter.textContent='愿繁星与你同在 ✧';
   }
   burstSparkles(
     container.getBoundingClientRect().left+16,
@@ -1223,8 +1243,10 @@ const lanternObs=new IntersectionObserver((entries)=>{
 },{threshold:0.4});
 lanternObs.observe(lanternSection);
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  WRITE-BACK + RELEASE RITUAL
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const writeArea=document.getElementById('writeArea');
+// ═══════════════════════════════════════════════════
+//  WRITE-BACK + RELEASE RITUAL
+// ═══════════════════════════════════════════════════
+const writeArea=document.getElementById('writeArea');
 const btnRelease=document.getElementById('btnRelease');
 const charCount=document.getElementById('charCount');
 
@@ -1245,9 +1267,9 @@ btnRelease.addEventListener('click',()=>{
   if(!text||btnRelease.classList.contains('sent'))return;
 
   btnRelease.classList.add('sent');
-  btnRelease.textContent='鉁?姝ｅ湪椋炲悜鏄熺┖... 鉁?;
+  btnRelease.textContent='✧ 正在飞向星空... ✧';
 
-  // Create floating thought elements 鈥?break text into segments
+  // Create floating thought elements — break text into segments
   const segments=text.match(/.{1,15}/g)||[text];
   const startRect=writeArea.getBoundingClientRect();
   const startX=startRect.left+startRect.width/2;
@@ -1285,12 +1307,14 @@ btnRelease.addEventListener('click',()=>{
     charCount.style.color='var(--text-secondary)';
     charCount.style.opacity='0.6';
     btnRelease.classList.remove('sent');
-    btnRelease.textContent='鉁?鏀鹃杩欎簺璇濓紝璁╂槦鏄熷惉瑙?鉁?;
+    btnRelease.textContent='✧ 放飞这些话，让星星听见 ✧';
   },segments.length*350+4000);
 });
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  ENVELOPE
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const envelopeWrapper=document.getElementById('envelopeWrapper');
+// ═══════════════════════════════════════════════════
+//  ENVELOPE
+// ═══════════════════════════════════════════════════
+const envelopeWrapper=document.getElementById('envelopeWrapper');
 const envelopeEl=document.getElementById('envelopeEl');
 const closeBtn=document.getElementById('closeLetter');
 let isOpen=false;
@@ -1300,8 +1324,10 @@ function closeEnvelope(){if(!isOpen)return;isOpen=false;envelopeEl.classList.rem
 envelopeEl.addEventListener('click',(e)=>{if(!isOpen)openEnvelope();e.stopPropagation();});
 closeBtn.addEventListener('click',(e)=>{e.stopPropagation();closeEnvelope();});
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  PROGRESS NAV
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const progressNav=document.getElementById('progress-nav');
+// ═══════════════════════════════════════════════════
+//  PROGRESS NAV
+// ═══════════════════════════════════════════════════
+const progressNav=document.getElementById('progress-nav');
 const allObs=document.querySelectorAll('.letter-section,#breathing-section,#lantern-section,#affirmation-section,#writeback-section,#envelope-section');
 allObs.forEach((sec)=>{
   const dot=document.createElement('div');dot.className='progress-dot';
@@ -1315,8 +1341,10 @@ allObs.forEach((sec)=>{
   dotObs.observe(sec);
 });
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  3D TILT ON CARDS
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?if(!isTouch){
+// ═══════════════════════════════════════════════════
+//  3D TILT ON CARDS
+// ═══════════════════════════════════════════════════
+if(!isTouch){
   document.addEventListener('mousemove',(e)=>{
     const x=(e.clientX/window.innerWidth-0.5)*2;
     const y=(e.clientY/window.innerHeight-0.5)*2;
@@ -1327,15 +1355,19 @@ allObs.forEach((sec)=>{
   });
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  READING PROGRESS BAR
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const progressBar=document.getElementById('progress-bar');
+// ═══════════════════════════════════════════════════
+//  READING PROGRESS BAR
+// ═══════════════════════════════════════════════════
+const progressBar=document.getElementById('progress-bar');
 window.addEventListener('scroll',()=>{
   const p=Math.min(1,Math.max(0,window.scrollY/dh()));
   progressBar.style.width=(p*100)+'%';
 },{passive:true});
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  MOOD THEME SELECTOR
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const moodBtns=document.querySelectorAll('.mood-btn');
+// ═══════════════════════════════════════════════════
+//  MOOD THEME SELECTOR
+// ═══════════════════════════════════════════════════
+const moodBtns=document.querySelectorAll('.mood-btn');
 const moodSelector=document.getElementById('mood-selector');
 
 // Show mood selector when user scrolls past hero
@@ -1353,8 +1385,10 @@ moodBtns.forEach(btn=>{
   });
 });
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  HERO FLOATING PARTICLES
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?(function heroParticles(){
+// ═══════════════════════════════════════════════════
+//  HERO FLOATING PARTICLES
+// ═══════════════════════════════════════════════════
+(function heroParticles(){
   const container=document.getElementById('hero-particles');
   if(!container)return;
   const count=18;
@@ -1371,8 +1405,10 @@ moodBtns.forEach(btn=>{
   }
 })();
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  MANTRA SECTION 鈥?reveal lines sequentially
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const mantraObs=new IntersectionObserver((entries)=>{
+// ═══════════════════════════════════════════════════
+//  MANTRA SECTION — reveal lines sequentially
+// ═══════════════════════════════════════════════════
+const mantraObs=new IntersectionObserver((entries)=>{
   if(entries[0].isIntersecting){
     const lines=document.querySelectorAll('.mantra-line');
     lines.forEach((line,i)=>{
@@ -1383,42 +1419,46 @@ moodBtns.forEach(btn=>{
 },{threshold:0.4});
 mantraObs.observe(document.getElementById('mantra-section'));
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  POETIC FOOTER TIME
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?function updateFooterTime(){
+// ═══════════════════════════════════════════════════
+//  POETIC FOOTER TIME
+// ═══════════════════════════════════════════════════
+function updateFooterTime(){
   const el=document.getElementById('footerTime');
   if(!el)return;
   const now=new Date();
   const h=now.getHours(),m=now.getMinutes();
-  const ampm=h<12?'鏈?:'鏆?;
+  const ampm=h<12?'朝':'暮';
   const hr=h%12||12;
   const timeStr=hr+':'+String(m).padStart(2,'0')+' '+ampm;
   const poeticLines=[
-    '姝ゅ埢锛屾槦鍏夋濂?,
-    '鎰胯繖涓€鍒诲畞闈欏姘?,
-    '鏃堕棿鍦ㄨ繖閲屽彉寰楁俯鏌?,
-    '浣犲湪锛屽氨鏄渶濂界殑鏃跺埢',
-    '浠婂鏈夐锛屽績涓湁鍏?,
-    '涓庤嚜宸辩浉閬囷紝鍦ㄨ繖瀹夐潤鐨勭墖鍒?,
-    '姣忎竴鍒婚兘鏄柊鐨勫紑濮?
+    '此刻，星光正好',
+    '愿这一刻宁静如水',
+    '时间在这里变得温柔',
+    '你在，就是最好的时刻',
+    '今夜有风，心中有光',
+    '与自己相遇，在这安静的片刻',
+    '每一刻都是新的开始'
   ];
   const idx=Math.floor((h%24)/24*poeticLines.length);
-  el.textContent=poeticLines[idx]+'  路  '+timeStr;
+  el.textContent=poeticLines[idx]+'  ·  '+timeStr;
 }
 updateFooterTime();
 setInterval(updateFooterTime,30000);
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  SELF-REFLECTION PROMPTS 鈥?gentle rotation
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?const reflectionEl=document.getElementById('reflection-overlay');
+// ═══════════════════════════════════════════════════
+//  SELF-REFLECTION PROMPTS — gentle rotation
+// ═══════════════════════════════════════════════════
+const reflectionEl=document.getElementById('reflection-overlay');
 const reflectionText=document.getElementById('reflectionPrompt');
 const reflections=[
-  '浠婂ぉ锛屼綘鏈€鎯冲鑷繁璇翠粈涔堬紵',
-  '浣犲師璋呰嚜宸变簡鍚楋紵',
-  '姝ゅ埢锛屼綘鎰熷彈鍒颁粈涔堬紵',
-  '濡傛灉鍙互鎷ユ姳鑷繁锛屼綘浼氳浠€涔堬紵',
-  '浠婂ぉ浣犺緵鑻︿簡锛岀疮浜嗗悧锛?,
-  '浣犱负鑷繁鍋氳繃鏈€娓╂煍鐨勪簨鏄粈涔堬紵',
-  '濡傛灉涓嶅繀瀹岀編锛屼綘浼氭€庝箞娲伙紵',
-  '浣犳渶杩戜竴娆″鑷繁寰瑧鏄粈涔堟椂鍊欙紵'
+  '今天，你最想对自己说什么？',
+  '你原谅自己了吗？',
+  '此刻，你感受到什么？',
+  '如果可以拥抱自己，你会说什么？',
+  '今天你辛苦了，累了吗？',
+  '你为自己做过最温柔的事是什么？',
+  '如果不必完美，你会怎么活？',
+  '你最近一次对自己微笑是什么时候？'
 ];
 let refIdx=0;
 setTimeout(()=>{
